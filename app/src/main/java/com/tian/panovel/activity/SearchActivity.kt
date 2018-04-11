@@ -49,7 +49,10 @@ class SearchActivity : BaseActivity() {
 
         val adapter = LRecyclerViewAdapter(object : AutoCommonAdapter<SearchResp.Item>(this, R.layout.item_search, datas) {
             override fun convert(holder: ViewHolder?, t: SearchResp.Item?, position: Int) {
-                if (holder == null || t == null) return
+                if (holder == null || t == null) {
+                    toast("未搜索到记录")
+                    return
+                }
 
                 holder.convertView.tvName.text = t.title
                 holder.convertView.tvDetail.text = t.infos[0]
@@ -72,6 +75,8 @@ class SearchActivity : BaseActivity() {
     fun load(isFirst: Boolean, isRefresh: Boolean) {
         val ob = object : BaseObserver<SearchResp>(this) {
             override fun _onNext(t: SearchResp) {
+                if (t.books == null || t.books.size == 0) return
+
                 LogHelper.LogE(t)
                 if (totalPage == 1) {
                     totalPage = t.pageInfo.split("/")[1].toInt()
