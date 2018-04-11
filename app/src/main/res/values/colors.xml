@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4CAF50</color>
+    <color name="colorPrimaryDark">#388E3C</color>
+    <color name="colorAccent">#dfdfdf</color>
+    <color name="white">#FFFFFF</color>
+    <color name="line">#BDBDBD</color>
+    <color name="clickgray">#ededed</color>
+    <color name="title">#212121</color>
+    <color name="subtitle">#757575</color>
+    <color name="btn_blue">#6AABF2</color>
+    <color name="btn_yellow">#ECC15A</color>
+    <color name="black333">#333</color>
+    <color name="red">#ed0800</color>
+
+    <color name="black_overlay">#66000000</color>
+</resources>

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">抓小说</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_book_detail">BookDetailActivity</string>
+    <string name="loading">正在加载...</string>
+    <string name="btn_cancel">取消</string>
+    <string name="btn_sure">确定</string>
+
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+</resources>
