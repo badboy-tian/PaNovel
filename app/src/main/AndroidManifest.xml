@@ -65,7 +65,7 @@
             android:value="5acdb9f8a40fa370ac000120" />
         <meta-data
             android:name="UMENG_CHANNEL"
-            android:value="google" />
+            android:value="coolapk" />
     </application>
 
 </manifest>
