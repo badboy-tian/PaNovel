@@ -8,6 +8,7 @@ import android.os.Environment
 import android.support.v4.app.Fragment
 import android.support.v4.app.FragmentManager
 import android.support.v4.app.FragmentPagerAdapter
+import android.support.v4.app.FragmentStatePagerAdapter
 import android.support.v4.view.MenuItemCompat
 import android.support.v4.view.ViewPager
 import android.support.v7.app.AlertDialog
@@ -96,6 +97,7 @@ class MainActivity : BaseActivity() {
 
     private fun initTabLayout() {
         viewpager.adapter = MainAdapter(supportFragmentManager)
+        viewpager.offscreenPageLimit = fragments.size - 1
         tablayout.setupWithViewPager(viewpager)
     }
 
@@ -159,7 +161,7 @@ class MainActivity : BaseActivity() {
 
     val fragments = ArrayList<Fragment>()
 
-    private inner class MainAdapter(fm: FragmentManager) : FragmentPagerAdapter(fm), ViewPager.OnPageChangeListener {
+    private inner class MainAdapter(fm: FragmentManager) : FragmentStatePagerAdapter(fm), ViewPager.OnPageChangeListener {
         init {
             fragments.add(HomeFragment.newInstance(ItemType.XUANHUAN))
             fragments.add(HomeFragment.newInstance(ItemType.WUXIA))

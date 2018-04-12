@@ -38,8 +38,6 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
     implementation 'com.github.badboy-tian:SuperTianPro:0.6'
-    /*implementation 'me.ghui:Fruit:1.0.4'
-    implementation 'me.ghui:global-retrofit-converter:1.0.1'*/
 
     implementation 'pl.droidsonroids:jspoon:1.3.0'
     implementation 'pl.droidsonroids.retrofit2:converter-jspoon:1.0.0'
